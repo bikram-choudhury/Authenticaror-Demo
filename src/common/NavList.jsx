@@ -4,10 +4,10 @@ const noop = () => { };
 export default function NavList({ items = [], onClick = noop }) {
 
     return (
-        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
             {
                 items.map((item, idx) => (
-                    <li class="nav-item" key={`item-${idx}`}>
+                    <li className="nav-item" key={`item-${idx}`}>
                         <a
                             class={`nav-link ${item.active ? 'active' : ''}`}
                             id="home-tab"

@@ -99,6 +99,9 @@ $color_4: #495057;
 	font-weight: 600;
 	width: 50%;
 	cursor: pointer;
+	&:disabled {
+		background: #889eb6
+	}
 }
 .register-heading {
 	text-align: center;

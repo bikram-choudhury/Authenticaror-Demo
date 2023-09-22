@@ -15,11 +15,11 @@ export default function Radio({
         <div className={className}>
             {
                 list.map(l => (
-                    <label className="radio inline">
+                    <label className="radio inline" key={l.value}>
                         <input
                             type="radio"
                             value={l.value}
-                            onClick={e => onSelect(e.target.value)}
+                            onChange={e => onSelect(e.target.value)}
                             checked={l.value === selected}
                             {...props}
                         />
